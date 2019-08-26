@@ -1,0 +1,268 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  {# <link rel="stylesheet" href="{% static "css/materialize.css" %}"> #}
+  <link rel="stylesheet" href="{% static "css/materialize.min.css" %}">
+
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  {# My CSS #}
+  <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+
+  {# Logo Title #}
+  <link rel="stylesheet" type="image/png" href="{% static "img/logounj.png" %}" style="height:64px;">
+
+
+  <title>
+    {% block page_title %}
+    {{page_title}}
+    {% endblock page_title %}
+  </title>
+</head>
+
+<body id="home" class="scrollspy">
+
+  {# Navbar #}
+  <div class="navbar-fixed">
+    <nav class="grey darken-3">
+      <div class="container col s12">
+        <div class="nav-wrapper">
+          <a href="#home" class="brand-logo teal-text col s12"><i class="material-icons">school</i>Graduation</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about"><i class="material-icons blue-text">face</i></a></li>
+            <li><a href="#album"><i class=" material-icons blue-text">photo_camera</i></a></li>
+            <li><a href="#portofolio"><i class=" material-icons blue-text">fingerprint</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  {# sidenav #}
+  <ul class="sidenav grey darken-3" id="mobile-nav">
+    <li>
+      <div class="user-view">
+        <div class="background" style="height:150px; width:100%;">
+          <img class="center" src="{% static "img/roses/4.jpg" %}" style="max-width:100%;">
+        </div>
+        <a href="#"><img class="circle" src="{% static "img/aci/12.jpg" %}" style="margin-top:20px;"></a>
+        <a href="#"><span class="white-text name">Astri Delistya Rizky</span></a>
+      </div>
+    </li>
+    <li><a class="blue-text" href="#home"><i class="material-icons blue-text">face</i>About Me</a></li>
+    <li><a class="blue-text" href="#album"><i class="material-icons blue-text">photo_camera</i>Photos</a></li>
+    <li><a class="blue-text" href="#portofolio"><i class="material-icons blue-text">fingerprint</i>Ability</a></li>
+  </ul>
+  
+
+
+
+
+  {# Slider #}
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img class="responsive-img" src="{% static "img/roses/1.jpg" %}">
+        <div class="caption left-align">
+          <h3>Astri Delistya Rizky</h3>
+          <h5 class="light grey-text text-lighten-3">I'am Turophile, Cat Lover and White roses Lover</h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="{% static "img/roses/2.jpg" %}">
+        <div class="caption center-align">
+          <h3>Astri Delistya Rizky</h3>
+          <h5 class="light grey-text text-lighten-3">I'am Turophile, Cat Lover and White roses Lover</h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="{% static "img/roses/3.jpg" %}">
+        <div class="caption right-align">
+          <h3>Astri Delistya Rizky</h3>
+          <h5 class="light grey-text text-lighten-3">I'am Turophile, Cat Lover and White roses Lover</h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="{% static "img/roses/5.jpg" %}">
+        <div class="caption left-align">
+          <h3>Astri Delistya Rizky</h3>
+          <h5 class="light grey-text text-lighten-3">I'am Turophile, Cat Lover and White roses Lover</h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="{% static "img/roses/6.jpg" %}">
+        <div class="caption center-align">
+          <h3>Astri Delistya Rizky</h3>
+          <h5 class="light grey-text text-lighten-3">I'am Turophile, Cat Lover and White roses Lover</h5>
+        </div>
+      </li>
+      <li>
+        <img class="responsive-img" src="{% static "img/roses/7.jpg" %}">
+        <div class="caption right-align">
+          <h3>Astri Delistya Rizky</h3>
+          <h5 class="light grey-text text-lighten-3">I'am Turophile, Cat Lover and White roses Lover</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  {# About Me #}
+  <section class="about scrollspy" id="about">
+    <div class="container">
+      <div class="row">
+        <h2 class="center light grey-text text-darken-3">About Me!</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col m4 s12">
+          <h3 class="center brown-text"><i class="large material-icons">album</i></h3>
+          <h5 class="center">Music</h5>
+          <p>Saya sangat senang mendengar musik! Playlist kesukaan saya adalah Arctic Monkey, Ramengvrl, Maliq & D'Essentials and many more. Saya tidak dapat lepas dari headset</p>
+        </div>
+        <div class="col m4 s12">
+          <h3 class="center brown-text"><i class="large material-icons">battery_charging_full</i></h3>
+          <h5 class="center">Energetic</h5>
+          <p>Im a super girl! Saya sangat senang menjalani suatu aktivitas dan hari hari dengan penuh semangat, disamping itu saya juga bertanggung jawab akan suatu hal</p>
+        </div>
+        <div class="col m4 s12">
+          <h3 class="center brown-text"><i class="large material-icons">verified_user</i></h3>
+          <h5 class="center">Trouleshooter</h5>
+          <p>Saya tipikal orang yang akan menyelesaikan suatu masalah sampai tuntas. Bila ada suatu masalah yang belum terpecahkan atau belum tuntas saya tidak akan tenang</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  {# parallax #}
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="{% static "img/cheese/7.jpg" %}"></div>
+  </div>
+
+
+
+  {# Album #}
+  <section class="album grey lighten-3 scrollspy" id="album">
+    <div class="container">
+      <div class="row">
+        <h2 class="center light grey-text text-darken-3">Mini Album</h2>
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="{% static "img/aci/5.jpg" %}"></a>
+          <a class="carousel-item" href="#one!"><img src="{% static "img/aci/6.jpg" %}"></a>
+          <a class="carousel-item" href="#one!"><img src="{% static "img/aci/11.jpg" %}"></a>
+          <a class="carousel-item" href="#one!"><img src="{% static "img/aci/12.jpg" %}"></a>
+          <a class="carousel-item" href="#one!"><img src="{% static "img/aci/13.jpg" %}"></a>
+          <a class="carousel-item" href="#one!"><img src="{% static "img/aci/14.jpg" %}"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  {# parallax #}
+  <div class="parallax-container">
+    <div class="parallax"><img src="{% static "img/roses/5.jpg" %}"></div>
+  </div>
+
+
+
+
+  <section class="portofolio scrollspy" id="portofolio">
+    <div class="container">
+      <div class="row">
+        <h2 class="center light grey-text text-darken-3">Ability</h2>
+        <div class="col m4 s12">
+          <div class="card-panel blue darken-3 center white-text">
+            <i class="large material-icons">local_dining</i>
+            <h5>Cooking</h5>
+            <div class="progress">
+              <div class="determinate green accent-3" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col m4 s12">
+          <div class="card-panel blue darken-3 center white-text">
+            <i class="large material-icons">record_voice_over</i>
+            <h5>English</h5>
+            <div class="progress">
+              <div class="determinate green accent-5" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col m4 s12">
+          <div class="card-panel blue darken-3 center white-text">
+            <i class="large material-icons">attach_money</i>
+            <h5>Management</h5>
+            <div class="progress">
+              <div class="determinate light-green accent-3" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer-am center grey darken-2 white-text">
+    <p class="flow-text">&copy; 2019 Copyright: Muhammad Rizky AM</p>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="{% static "js/materialize.js" %}"></script>
+  <script src="{% static "js/materialize.min.js" %}"></script>
+
+  <script type="text/javascript">
+  const sideNav = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(sideNav);
+
+  const slider = document.querySelectorAll('.slider');
+  M.Slider.init(slider,{
+    indicators: false,
+    transitions: 600,
+    interval: 3000,
+    height: 550,
+  });
+
+  const parallax = document.querySelectorAll('.parallax');
+  M.Parallax.init(parallax);
+
+  const materialbox = document.querySelectorAll('.materialboxed');
+  M.Materialbox.init(materialbox);
+
+  const scroll = document.querySelectorAll('.scrollspy');
+  M.ScrollSpy.init(scroll, {
+    scrollOffset: 50,
+  });
+
+  const carousel = document.querySelectorAll('.carousel');
+  M.Carousel.init(carousel, {
+    duration: 200,
+    numVisible: 5,
+    shift:50,
+  });
+
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+</body>
+</html>
